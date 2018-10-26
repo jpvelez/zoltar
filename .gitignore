@@ -27,3 +27,4 @@ created_job_ids
 
 ## Python virtualenv
 .venv
+bazel-*

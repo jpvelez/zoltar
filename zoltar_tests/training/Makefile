@@ -32,3 +32,5 @@ iris-xgboost: $(IRIS_PYTHON_PKG) ## Train iris xgboost model
 		--training_set=$(TRAINING_SET) \
 		--batch_size=12 \
 		$(EXTRA_FLAGS)
+
+--job_dir=gs://data-integration-test-us/zoltar/iris/trained/$(shell whoami)/$(shell date +%Y-%m-%d--%H-%M-%S) --training_set=gs://data-integration-test-us/zoltar/iris --batch_size=12
